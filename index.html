@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="cursor"></div>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="hetu.jpg" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">
+                        ENTERTAINMENT</li>
+                    <li class="hover-link nav-item" id="economy" onclick="onNavItemClick('economy')">ECONOMY</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">POLITICS</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">TECHNOLOGY
+                    </li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">SPORTS</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <div class="wrapper1"></div>
+    <div class="wrapper2"></div>
+    <div class="wrapper3"></div>
+    <div class="wrapper4"></div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; My Website. All rights reserved.
+            </p>
+            <br>
+            <h3 style="color: rgb(96, 146, 189);">Visit My Social Media Platforms for more information..</h3>
+            <ul>
+                <a href="https://github.com/Patelhetu-177">
+                    <li>
+                        <ion-icon name="logo-github"></ion-icon>
+                        Github
+                    </li>
+                </a>
+                <a href="https://www.instagram.com/hetu_patel_1707/">
+                    <li>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        Instagram
+                    </li>
+                </a>
+            </ul>
+
+            <div id="back-to-top">Back to Top</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
